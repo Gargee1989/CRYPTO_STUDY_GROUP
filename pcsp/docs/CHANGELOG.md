@@ -2,6 +2,10 @@
 
 Details regarding implementation and changes of certain parts of the code. Incomplete, Todo, better implementation expectation can be also logged. 
 
+### REQ-CIP-403 : Saurav_Chakraborty
+  - Implemented the keyless Atbash cipher over the 0..25 alphabet domain.
+  - Added encryption, decryption, round-trip, empty-input, and keyless behavior tests.
+
 ### REQ-CIP-402 : nonQualities/Ronit_Choudhury:
   -  All test cases handled except non-alphabatic keys.
   -  Needs better error handling.
