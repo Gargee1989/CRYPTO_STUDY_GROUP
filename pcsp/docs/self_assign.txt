@@ -25,28 +25,28 @@ LIST OF ALL REQUIREMENTS: [X] : Already Taken; [-]: Unassigned
 [X] REQ-CIP-404: Monoalphabetic Substitution
 [X] REQ-CIP-502: Beaufort Cipher
 [X] REQ-CIP-503: Autokey Cipher
-[-] REQ-CIP-601: Playfair Cipher
+[X] REQ-CIP-601: Playfair Cipher
 [-] REQ-CIP-602: Hill Cipher
 [X] REQ-CIP-701: Rail Fence Cipher
 [X] REQ-CIP-702: Columnar Transposition
 [X] REQ-NFR-801: Memory Constraints
-[-] REQ-NFR-802: Graceful Error Recovery
+[X] REQ-NFR-802: Graceful Error Recovery
 
 
 
                             SELF ASSIGNMENT: Ronit_Choudhury
                             ---------------------------------
 
-- REQ-PRT-201 (HEADER ANATOMY)                       <nonQualities/Ronit_Choudhury>: 20/07/26
-- REQ-PRT-203 (SERVER_PARSER_STATE_MACHINE)          <nonQualities/Ronit_Choudhury>: 20/07/26
-- REQ-CIP-402,REQ-CIP-503, REQ-CIP-702               <nonQualities/Ronit_Choudhury>: 20/07/26
+- REQ-PRT-201 (HEADER ANATOMY)                        <nonQualities/Ronit_Choudhury>: 20/07/26
+- REQ-PRT-203 (SERVER_PARSER_STATE_MACHINE)           <nonQualities/Ronit_Choudhury>: 20/07/26
+- REQ-CIP-402,REQ-CIP-503, REQ-CIP-702                <nonQualities/Ronit_Choudhury>: 20/07/26
 
 
                             SELF ASSIGNMENT : VED BHANDARY
                             ----------------------------------
 - REQ-CIP-501                                         <vedbd/Ved_Bhandary>: 21/07/26
 - REQ-CIP-502                                         <vedbd/Ved_Bhandary>: 21/07/26
-- REQ-CIP-701		                                  <vedbd/Ved_Bhandary>: 21/07/26
+- REQ-CIP-701		                                      <vedbd/Ved_Bhandary>: 21/07/26
 
                             SELF ASSIGNMENT : ABHISHEK DAS 
                             ------------------------------
@@ -59,8 +59,8 @@ LIST OF ALL REQUIREMENTS: [X] : Already Taken; [-]: Unassigned
                             SELF ASSIGNMENT : SAURAV CHAKRABORTY 
                             ------------------------------------
 
-- REQ-CIP-401               <saurav-cell/Saurav_Chakraborty> : 23/07/26
-- REQ-CIP-403               <saurav-cell/Saurav_Chakraborty> : 23/07/26
+- REQ-CIP-401                                        <saurav-cell/Saurav_Chakraborty> : 23/07/26
+- REQ-CIP-403                                        <saurav-cell/Saurav_Chakraborty> : 23/07/26
 
 
 
@@ -71,4 +71,7 @@ LIST OF ALL REQUIREMENTS: [X] : Already Taken; [-]: Unassigned
 - REQ-NFR-801                                        <Piyanshu05/Piyanshu_Pandya>: 25/07/26
 
 
-                            
+                            SELF ASSIGNMENT : GARGEE KAKATY
+                           ---------------------------------
+- REQ-CIP-601                                        <gargee1989/Gargee_Kakaty>: 26/07/2026
+- REQ-NFR-802                                        <gargee1989/Gargee_Kakaty>: 26/07/2026
