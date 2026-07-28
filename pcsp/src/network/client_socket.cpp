@@ -1,10 +1,30 @@
 #include "pcsp/network.hpp"
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <unistd.h>
 
-// TODO(REQ-NET-103): create AF_INET/SOCK_STREAM socket, resolve
-// `ip_address` with inet_pton(), connect() to `port`. Return the connected
-// socket fd, or -1 on failure (caller decides how to report it).
 int connect_to_server(const char* ip_address, uint16_t port) {
-    (void)ip_address;
-    (void)port;
-    return -1; // placeholder
+    int sock_fd = socket(AF_INET, SOCK_STREAM, 0);
+
+    if (sock_fd < 0)
+        return -1;
+
+    sockaddr_in server_addr{};
+
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_port = htons(port);
+
+    //  IP address string to binary
+    if (inet_pton(AF_INET, ip_address, &server_addr.sin_addr) <= 0) {
+        close(sock_fd);
+        return -1;
+    }
+
+    // Connect to server
+    if (connect(sock_fd, reinterpret_cast<sockaddr*>(&server_addr), sizeof(server_addr)) < 0) {
+        close(sock_fd);
+        return -1;
+    }
+
+    return sock_fd;
 }
