@@ -6,8 +6,7 @@ std::vector<uint8_t> RailFenceCipher::encrypt(
     const std::vector<uint8_t>& plaintext,
     const std::vector<uint8_t>& key) const
 {
-    // (void)key;
-    // return plaintext; // placeholder identity transform -- replace with real math
+    // works 
     if (key.empty() || plaintext.empty()) {
         return {};
     }
