@@ -2,6 +2,9 @@
 #include <cctype>
 // @ved: copied from vigenere code
 // ref used: https://uomustansiriyah.edu.iq/media/lectures/5/5_2023_11_13!11_35_06_PM.pdf
+
+namespace {
+
 // ascii only
 uint8_t index_norm(uint8_t ch) {
     if (std::isupper(ch)) {
@@ -28,6 +31,8 @@ bool is_str_alpha(const std::vector<uint8_t>& s) {
     }
     return false;
 }
+
+} // namespace
 
 // TODO(REQ-CIP-502): implement BeaufortCipher::encrypt
 // Key field format: Variable -- ASCII string

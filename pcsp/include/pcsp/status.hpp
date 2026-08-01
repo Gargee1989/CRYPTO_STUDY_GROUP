@@ -13,6 +13,7 @@
 // =============================================================================
 enum class PCSPStatus : uint8_t {
     OK                        = 0x00,
+    ERR_UNSUPPORTED_VERSION   = 0x98,
     ERR_UNSUPPORTED_CIPHER    = 0x99,
     ERR_MATRIX_NOT_INVERTIBLE = 0x9A,
     ERR_LENGTH_MISMATCH       = 0x9B

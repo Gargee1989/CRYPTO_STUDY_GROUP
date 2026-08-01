@@ -1,4 +1,7 @@
 #include <iostream>
+#include <cassert>
+#include <arpa/inet.h>
+
 #include "pcsp/protocol.hpp"
 
 // Standalone roundtrip check for serialize_header()/deserialize_header()
@@ -12,10 +15,14 @@ int main() {
 
     PCSPHeader net  = serialize_header(h);
     PCSPHeader back = deserialize_header(net);
-    (void)back; // TODO: remove once real assertions are added below
 
-    std::cout << "TODO: assert back.key_length == h.key_length "
-              << "and back.payload_len == h.payload_len (byte-order roundtrip)"
-              << std::endl;
+    assert(back.version == h.version);
+    assert(back.cipher_id == h.cipher_id);
+    assert(back.key_length == h.key_length);
+    assert(back.payload_len == h.payload_len);
+    assert(net.key_length == htons(h.key_length));
+    assert(net.payload_len == htons(h.payload_len));
+
+    std::cout << "protocol header serialization roundtrip passed" << std::endl;
     return 0;
 }
