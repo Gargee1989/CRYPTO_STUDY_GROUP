@@ -17,3 +17,8 @@ Details regarding implementation and changes of certain parts of the code. Incom
 ### REQ-CIP-502 : vedbd/Ved_Bhandary
   - All test cases handled.
   - IDEA: Central logger of sorts?
+
+### REQ-CIP-701 : vedbd/Ved_Bhandary
+  - Edge cases handled.
+  - Custom test cases passed.
+  - Code cleanup is required. 
