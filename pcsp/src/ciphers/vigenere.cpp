@@ -1,6 +1,8 @@
 #include "pcsp/ciphers/vigenere.hpp"
 #include <cctype>
 
+namespace {
+
 // ascii only
 uint8_t index_norm(uint8_t ch) {
     if (std::isupper(ch)) {
@@ -27,6 +29,8 @@ bool is_str_alpha(const std::vector<uint8_t>& s) {
     }
     return false;
 }
+
+} // namespace
 
 // DONE(REQ-CIP-501): implement VigenereCipher::encrypt
 // Key field format: Variable -- ASCII string
