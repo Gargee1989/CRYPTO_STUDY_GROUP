@@ -1,4 +1,4 @@
-#include "playfair.hpp"
+#include "pcsp/ciphers/playfair.hpp"
 
 #include <array>
 #include <cctype> 
